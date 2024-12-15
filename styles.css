@@ -1,0 +1,237 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 20px;
+    background:black;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px lightgray;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 14px;
+  }
+  
+  .task-input button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+  
+  .task-input button:hover {
+    background-color: lightslategray;
+  }
+  
+  .task-list, .task-history {
+    margin: 20px 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: black;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .task-actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-actions .progress-btn {
+    background-color:lightgrey;
+    color: white;
+  }
+  
+  .task-actions .complete-btn {
+    background-color:lightblue;
+    color: white;
+  }
+  
+  .task-actions .progress-btn:hover {
+    background-color: black;
+  }
+  
+  .task-actions .complete-btn:hover {
+    background-color: black;
+  }
+  
+   .image-upload {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .pdf-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+   .notes-input {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .notes-input textarea {
+    width: 80%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    resize: vertical;
+  }
+  
+  .notes-input button {
+    padding: 8px 16px;
+    border: none;
+    background-color: black;
+    color:wheat;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .notes-input button:hover {
+    background-color: #ec971f;
+  }
+  
+  @media (max-width: 600px) {
+    .task-input {
+      flex-direction: column;
+    }
+  
+    .task-input button {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .notes-input {
+      flex-direction: column;
+    }
+  
+    .notes-input button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .task-actions button {
+      width: 100%;
+      margin-top: 5px;
+    }
+  
+    .task-history ul, .task-list ul {
+      padding-left: 0;
+    }
+  
+    .task-history li, .task-list li {
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+  }
+  
+   @media (min-width: 601px) and (max-width: 1024px) {
+    .task-input {
+      flex-direction: column;
+    }
+  
+    .task-input button {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .notes-input {
+      flex-direction: column;
+    }
+  
+    .notes-input button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .task-actions button {
+      width: 100%;
+      margin-top: 5px;
+    }
+  
+    .task-history ul, .task-list ul {
+      padding-left: 0;
+    }
+  
+    .task-history li, .task-list li {
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+  }
+  
+   @media (min-width: 1025px) {
+    .task-input {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .task-input input {
+      width: 80%;
+    }
+  
+    .task-input button {
+      margin-left: 10px;
+      margin-top: 0;
+    }
+  
+    .notes-input {
+      flex-direction: row;
+    }
+  
+    .notes-input textarea {
+      width: 80%;
+    }
+  
+    .task-actions button {
+      width: auto;
+      margin-top: 0;
+    }
+  
+    .task-history ul, .task-list ul {
+      padding-left: 0;
+    }
+  
+    .task-history li, .task-list li {
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+  }

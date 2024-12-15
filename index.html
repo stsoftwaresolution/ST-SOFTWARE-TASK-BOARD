@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task and Work Update</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <i ><H1 style="color: whitesmoke;"><span style="color: goldenrod;">S</span>T SOFTWARE SOLUTION</H1></i>
+    <h1>Task and Work Update</h1>
+    
+     <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter a new task">
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+    
+     <div class="task-list">
+      <h2>Task List</h2>
+      <ul id="taskList"></ul>
+    </div>
+
+     <div class="task-history">
+      <h2>Task Update History</h2>
+      <ul id="historyList"></ul>
+    </div>
+
+     <div class="image-upload">
+      <input type="file" id="imageInput" accept="image/*">
+    </div>
+
+     <div class="pdf-btn">
+      <button id="generatePdfBtn">Generate PDF</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
